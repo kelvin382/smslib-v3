@@ -82,7 +82,7 @@ public class SMSServer
 		orphanedMessageNotification = new OrphanedMessageNotification();
 		this.inboundPollingThread = null;
 		this.outboundPollingThread = null;
-		//Service.getInstance().setInboundMessageNotification(this.inboundNotification);
+		Service.getInstance().setInboundMessageNotification(this.inboundNotification);
 		Service.getInstance().setOutboundMessageNotification(this.outboundNotification);
 		Service.getInstance().setCallNotification(this.callNotification);
 		Service.getInstance().setQueueSendingNotification(this.queueSendingNotification);
